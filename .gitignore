@@ -1,0 +1,78 @@
+# .gitignore for Visual Studio, .NET, and common OS artifacts
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+
+# Others
+*.vspscc
+*.vssscc
+.vs/
+_ReSharper*/
+
+# Dotnet specific
+*.dbmdl
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb
+*.svclog
+*.scc
+*.cache
+*.ilk
+*.aps
+*.ncb
+*.sbr
+*.tlh
+*.tli
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+*.swn
+*.orig
+*.rej
+*.sdf
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.sln.ide
+*.sln.ide*
