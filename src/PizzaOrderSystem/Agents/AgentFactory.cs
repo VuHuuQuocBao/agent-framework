@@ -74,7 +74,7 @@ public class AgentFactory
                 AIFunctionFactory.Create(menuTools.GetNextSize,          "GetNextSize",          "Get the next larger pizza size"),
                 AIFunctionFactory.Create(menuTools.GetPreviousSize,      "GetPreviousSize",      "Get the next smaller pizza size"),
                 AIFunctionFactory.Create(menuTools.GetPizzaPrice,        "GetPizzaPrice",        "Get price for a specific pizza and size"),
-                AIFunctionFactory.Create(orderTools.CalculateOrderPrice, "CalculateOrderPrice",  "Calculate total price for a list of items"),
+                AIFunctionFactory.Create(orderTools.CalculateOrderPrice, "CalculateOrderPrice",  "Calculate total price fkor a list of items"),
                 AIFunctionFactory.Create(orderTools.ValidateOrder,       "ValidateOrder",        "Validate all pizza IDs in an order"),
             ]);
 

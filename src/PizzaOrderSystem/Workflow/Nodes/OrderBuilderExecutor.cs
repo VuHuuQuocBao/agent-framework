@@ -57,6 +57,12 @@ public class OrderBuilderExecutor(AIAgent agent)
 
         // Parse the ORDER_READY JSON block
         state.PendingOrder = ParsePendingOrder(responseText, state.CustomerId);
+        var PendingOrderJson = state.PendingOrder != null
+            ? JsonSerializer.Serialize(state.PendingOrder, new JsonSerializerOptions { WriteIndented = true })
+            : "No valid order found in response.";
+
+        Console.Write("Parse successfully");
+        Console.Write($"Pending order: {PendingOrderJson}");
 
         await context.QueueStateUpdateAsync(StateKey, state, cancellationToken: cancellationToken);
         return state;

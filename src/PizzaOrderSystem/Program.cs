@@ -16,7 +16,7 @@ var config = new ConfigurationBuilder()
     .Build();
 
 var ollamaEndpoint = config["Ollama:Endpoint"] ?? "http://localhost:11434";
-var ollamaModel    = config["Ollama:ModelName"] ?? "llama3";
+var ollamaModel    = config["Ollama:ModelName"] ?? "qwen3:8b";
 var connString     = config.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("DefaultConnection not configured.");
 
